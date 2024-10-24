@@ -90,7 +90,7 @@ async def get_schedule(message: Message):
                     await message.answer(text=f"{el[3]} Английский язык {el[4]}")
                     c+=1
             if c == 0:
-                await message.answer(text="No lessons at this day")
+                await message.answer(text="You have no lessons at this day")
 
 @handler_router.callback_query(F.data == "bulitin@hse.ru")
 async def c1(callback: CallbackQuery):
