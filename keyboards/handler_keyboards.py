@@ -13,6 +13,7 @@ def english_lvl_choice() -> InlineKeyboardMarkup:
     buttons = [InlineKeyboardButton(text=lvl, callback_data=lvl) for lvl in levels]
     builder.add(*buttons)
     return builder.as_markup()
+
 def days() -> ReplyKeyboardMarkup:
     kb_builder = ReplyKeyboardBuilder()
     buttons = [KeyboardButton(text=f"{i}") for i in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']]
